@@ -1,0 +1,58 @@
+{
+    "Pasta Bolognese": {
+        "ingredients": [
+            {
+                "name": "Spaghetti",
+                "quantity": 200,
+                "unit": "g",
+                "category": "Dry Goods"
+            },
+            {
+                "name": "Tomato Sauce",
+                "quantity": 1,
+                "unit": "jar",
+                "category": "Canned Goods"
+            },
+            {
+                "name": "Ground Beef",
+                "quantity": 300,
+                "unit": "g",
+                "category": "Meat"
+            },
+            {
+                "name": "Onion",
+                "quantity": 1,
+                "unit": "piece",
+                "category": "Produce"
+            }
+        ]
+    },
+    "Chicken Salad": {
+        "ingredients": [
+            {
+                "name": "Chicken Breast",
+                "quantity": 200,
+                "unit": "g",
+                "category": "Meat"
+            },
+            {
+                "name": "Lettuce",
+                "quantity": 1,
+                "unit": "head",
+                "category": "Produce"
+            },
+            {
+                "name": "Tomato",
+                "quantity": 2,
+                "unit": "piece",
+                "category": "Produce"
+            },
+            {
+                "name": "Feta Cheese",
+                "quantity": 100,
+                "unit": "g",
+                "category": "Dairy"
+            }
+        ]
+    }
+}
