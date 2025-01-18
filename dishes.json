@@ -1,58 +1,1192 @@
 {
-    "Pasta Bolognese": {
-        "ingredients": [
-            {
-                "name": "Spaghetti",
-                "quantity": 200,
-                "unit": "g",
-                "category": "Dry Goods"
-            },
-            {
-                "name": "Tomato Sauce",
-                "quantity": 1,
-                "unit": "jar",
-                "category": "Canned Goods"
-            },
-            {
-                "name": "Ground Beef",
-                "quantity": 300,
-                "unit": "g",
-                "category": "Meat"
-            },
-            {
-                "name": "Onion",
-                "quantity": 1,
-                "unit": "piece",
-                "category": "Produce"
-            }
-        ]
+    "Banana Cream Pie Overnight Oats": {
+      "ingredients": [
+        {
+          "name": "Graham cracker crumbs",
+          "quantity": 0.25,
+          "unit": "cup",
+          "category": "Dry Goods"
+        },
+        {
+          "name": "Milk (for crust)",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "category": "Dairy"
+        },
+        {
+          "name": "Ripe banana (mashed)",
+          "quantity": 0.5,
+          "unit": "piece",
+          "category": "Produce"
+        },
+        {
+          "name": "Milk (for oats)",
+          "quantity": 0.5,
+          "unit": "cup",
+          "category": "Dairy"
+        },
+        {
+          "name": "Maple syrup",
+          "quantity": 0.5,
+          "unit": "tablespoon",
+          "category": "Other"
+        },
+        {
+          "name": "Vanilla Greek yogurt (for oats)",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "category": "Dairy"
+        },
+        {
+          "name": "Vanilla extract",
+          "quantity": 1,
+          "unit": "teaspoon",
+          "category": "Baking"
+        },
+        {
+          "name": "Oats (quick/rolled)",
+          "quantity": 0.33,
+          "unit": "cup",
+          "category": "Dry Goods"
+        },
+        {
+          "name": "Chia seeds",
+          "quantity": 1,
+          "unit": "tablespoon",
+          "category": "Dry Goods"
+        },
+        {
+          "name": "Vanilla protein powder",
+          "quantity": 1,
+          "unit": "tablespoon",
+          "category": "Supplements"
+        },
+        {
+          "name": "Vanilla Greek yogurt (topping)",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "category": "Dairy"
+        },
+        {
+          "name": "Sliced bananas (optional)",
+          "quantity": 0,
+          "unit": "",
+          "category": "Produce"
+        },
+        {
+          "name": "Crushed graham crackers (optional)",
+          "quantity": 0,
+          "unit": "",
+          "category": "Dry Goods"
+        }
+      ],
+      "instructions": [
+        "In a 10 oz mason jar or glass container, combine graham cracker crumbs and milk. Press into the bottom of the jar to form the crust.",
+        "In a medium bowl, whisk together mashed banana, milk, maple syrup, vanilla Greek yogurt, and vanilla extract. Stir in oats, chia seeds, and protein powder. Pour mixture over crust. Cover and refrigerate at least 3 hours or overnight.",
+        "In the morning, top with 2 tablespoons of vanilla Greek yogurt. Optionally add extra sliced bananas or crushed graham crackers.",
+        "Serving size: 1 jar of oats"
+      ],
+      "nutrition": {
+        "predicted": false,
+        "serving": "10 oz jar",
+        "calories": "533kcal",
+        "carbohydrates": "78g",
+        "protein": "26g",
+        "fat": "14g",
+        "saturated_fat": "4g",
+        "polyunsaturated_fat": "4g",
+        "monounsaturated_fat": "3g",
+        "trans_fat": "0.02g",
+        "cholesterol": "49mg",
+        "sodium": "255mg",
+        "potassium": "762mg",
+        "fiber": "9g",
+        "sugar": "30g",
+        "vitamin_a": "290IU",
+        "vitamin_c": "5mg",
+        "calcium": "380mg",
+        "iron": "3mg"
+      }
     },
-    "Chicken Salad": {
+    "Blueberry Chia Bowl with Warm Banana and Sesame Brittle": {
+        "ingredients": [
+        {
+            "name": "Blueberries (wild, frozen)",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Produce"
+        },
+        {
+            "name": "Milk (or plant-based)",
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Dairy"
+        },
+        {
+            "name": "Chia seeds",
+            "quantity": 3,
+            "unit": "tablespoon",
+            "category": "Dry Goods"
+        },
+        {
+            "name": "Cardamom (freshly ground)",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Baking"
+        },
+        {
+            "name": "Salt",
+            "quantity": 1,
+            "unit": "pinch",
+            "category": "Other"
+        },
+        {
+            "name": "Banana",
+            "quantity": 1,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Coconut oil",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Maple syrup",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Ginger (freshly grated)",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Produce"
+        },
+        {
+            "name": "Sunflower seeds",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Nuts/Seeds"
+        },
+        {
+            "name": "Sesame seeds",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Nuts/Seeds"
+        },
+        {
+            "name": "Walnuts (lightly crushed)",
+            "quantity": 1,
+            "unit": "handful",
+            "category": "Nuts/Seeds"
+        },
+        {
+            "name": "Greek yogurt (or coconut yogurt)",
+            "quantity": 4,
+            "unit": "tablespoon",
+            "category": "Dairy"
+        },
+        {
+            "name": "Nut butter (or tahini)",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Nuts/Seeds"
+        },
+        {
+            "name": "Dark chocolate",
+            "quantity": 30,
+            "unit": "g",
+            "category": "Baking"
+        }
+        ],
+        "instructions": [
+        "Mash the blueberries with a fork. Add the milk, chia seeds, cardamom, and salt, then whisk to combine. Let sit for 20 minutes, stirring once or twice.",
+        "Meanwhile, prepare the topping: heat coconut oil and maple syrup in a skillet and grate in the fresh ginger. Stir in sunflower seeds, sesame seeds, and walnuts.",
+        "Make room in the skillet and place the banana slices there, cooking briefly (about a minute on each side). Add extra oil or syrup if needed.",
+        "Spoon the chia pudding into one large bowl (or two smaller bowls), top with the yogurt, banana slices, seed mixture, a drizzle of nut butter, and a sprinkle of dark chocolate."
+        ],
+        "nutrition": {
+        "predicted": true,
+        "total_servings": 2,
+        "calories_per_serving": "746 kcal",
+        "protein_per_serving": "20 g",
+        "carbs_per_serving": "55 g",
+        "fat_per_serving": "51 g"
+        }
+    },
+    "Swirled Mousse Jars + US book events": {
+        "ingredients": [
+          {
+            "name": "Avocados",
+            "quantity": 2,
+            "unit": "piece",
+            "category": "Produce"
+          },
+          {
+            "name": "Limes",
+            "quantity": 3,
+            "unit": "piece",
+            "category": "Produce"
+          },
+          {
+            "name": "Dates (soft)",
+            "quantity": 6,
+            "unit": "piece",
+            "category": "Produce"
+          },
+          {
+            "name": "Blackcurrants (frozen)",
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Produce"
+          },
+          {
+            "name": "Cardamom (freshly ground)",
+            "quantity": 0.5,
+            "unit": "teaspoon",
+            "category": "Baking"
+          },
+          {
+            "name": "Yogurt (Greek or other)",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Dairy"
+          },
+          {
+            "name": "Dark chocolate",
+            "quantity": 20,
+            "unit": "g",
+            "category": "Baking"
+          },
+          {
+            "name": "Almonds",
+            "quantity": 10,
+            "unit": "piece",
+            "category": "Nuts/Seeds"
+          },
+          {
+            "name": "Nut butter (any type)",
+            "quantity": 2,
+            "unit": "dollop",
+            "category": "Nuts/Seeds"
+          },
+          {
+            "name": "Coconut oil",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Other"
+          },
+          {
+            "name": "Maple syrup",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Other"
+          }
+        ],
+        "instructions": [
+          "Cut and scoop out the avocados; place them in a food processor along with the juice of 3 limes and 6 pitted dates. Blend until creamy, adding a splash of water if needed. Adjust sweetness or lime juice to taste.",
+          "Remove half of the avocado mousse and divide it into 2 jars as the bottom layer.",
+          "Add frozen blackcurrants (or berries of choice) and cardamom to the remaining half of the mousse in the blender. Blend again until smooth.",
+          "Add a few spoons of yogurt to each jar, then top with the berry mousse. Swirl gently with a spoon.",
+          "Warm coconut oil and maple syrup in a skillet. Add almonds, dark chocolate (optional to melt slightly), or drizzle nut butter as desired—this can also be added on top instead.",
+          "Finish the jars with a topping of chopped dark chocolate, almonds, and dollops of nut butter. Serve immediately."
+        ],
+        "nutrition": {
+          "predicted": true,
+          "total_servings": 2,
+          "calories_per_serving": "580 kcal",
+          "protein_per_serving": "12 g",
+          "carbs_per_serving": "53 g",
+          "fat_per_serving": "36 g"
+        }
+      },
+    "Gyro Bowl with Chicken and Feta": {
+        "ingredients": [
+        {
+            "name": "Greek yogurt",
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Dairy"
+        },
+        {
+            "name": "Lemon (juice)",
+            "quantity": 1,
+            "unit": "large",
+            "category": "Produce"
+        },
+        {
+            "name": "Red wine vinegar",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Garlic cloves (minced)",
+            "quantity": 3,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Dried oregano",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Sweet paprika",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Ground cumin",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Ground coriander",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Cayenne pepper (optional)",
+            "quantity": 1,
+            "unit": "pinch",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Kosher salt",
+            "quantity": 1,
+            "unit": "pinch",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Black pepper",
+            "quantity": 1,
+            "unit": "pinch",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Extra-virgin olive oil",
+            "quantity": 3,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Chicken tenderloin",
+            "quantity": 1.5,
+            "unit": "pound",
+            "category": "Meat"
+        },
+        {
+            "name": "Greek Salad",
+            "quantity": 1,
+            "unit": "batch",
+            "category": "Other"
+        },
+        {
+            "name": "Tzatziki Sauce",
+            "quantity": 1,
+            "unit": "batch",
+            "category": "Condiment"
+        },
+        {
+            "name": "Pita breads (optional)",
+            "quantity": 2,
+            "unit": "piece",
+            "category": "Bakery"
+        }
+        ],
+        "instructions": [
+        "In a large bowl, whisk Greek yogurt, lemon juice, red wine vinegar, garlic, oregano, paprika, cumin, coriander, cayenne, salt, pepper, and about 2 tablespoons of olive oil to form a marinade.",
+        "Add chicken tenderloin to the marinade, coating well. Cover and refrigerate for 30 minutes or up to overnight.",
+        "Heat 1 tablespoon of olive oil in a nonstick pan over medium-high. Shake off excess marinade, then arrange chicken in a single layer. Cook 4–5 minutes on one side until browned, then flip and cook another 5 minutes or until chicken reaches 165°F.",
+        "Divide cooked chicken among 4–6 bowls. Add Greek salad, tzatziki sauce, and pita wedges to each bowl. Serve immediately."
+        ],
+        "nutrition": {
+        "predicted": false,
+        "calories": "163.5 kcal",
+        "carbohydrates": "4.5 g",
+        "protein": "28 g",
+        "fat": "3.3 g",
+        "saturated_fat": "0.7 g",
+        "polyunsaturated_fat": "0.5 g",
+        "monounsaturated_fat": "1 g",
+        "trans_fat": "0.01 g",
+        "cholesterol": "74.2 mg",
+        "sodium": "145.7 mg",
+        "potassium": "528 mg",
+        "fiber": "1.2 g",
+        "sugar": "1.6 g",
+        "vitamin_a": "229 IU",
+        "vitamin_c": "11.5 mg",
+        "calcium": "69.9 mg",
+        "iron": "1.3 mg"
+        }
+    },
+    "Spicy Salmon Roll Bowl": {
         "ingredients": [
             {
-                "name": "Chicken Breast",
-                "quantity": 200,
-                "unit": "g",
-                "category": "Meat"
+            "name": "Persian cucumbers",
+            "quantity": 3,
+            "unit": "piece",
+            "category": "Produce"
             },
             {
-                "name": "Lettuce",
-                "quantity": 1,
-                "unit": "head",
-                "category": "Produce"
+            "name": "Unseasoned rice vinegar",
+            "quantity": 0.25,
+            "unit": "cup",
+            "category": "Condiment"
             },
             {
-                "name": "Tomato",
-                "quantity": 2,
-                "unit": "piece",
-                "category": "Produce"
+            "name": "Kosher salt",
+            "quantity": 1,
+            "unit": "pinch",
+            "category": "Seasonings"
             },
             {
-                "name": "Feta Cheese",
-                "quantity": 100,
-                "unit": "g",
-                "category": "Dairy"
+            "name": "Sushi rice (or short-grain rice)",
+            "quantity": 2,
+            "unit": "cup",
+            "category": "Dry Goods"
+            },
+            {
+            "name": "Chili crisp",
+            "quantity": 3,
+            "unit": "tablespoon",
+            "category": "Condiment"
+            },
+            {
+            "name": "Mayonnaise",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Condiment"
+            },
+            {
+            "name": "Salmon fillet",
+            "quantity": 12,
+            "unit": "oz",
+            "category": "Seafood"
+            },
+            {
+            "name": "Cayenne pepper",
+            "quantity": 1,
+            "unit": "pinch",
+            "category": "Seasonings"
+            },
+            {
+            "name": "Avocados",
+            "quantity": 2,
+            "unit": "piece",
+            "category": "Produce"
+            },
+            {
+            "name": "Scallions",
+            "quantity": 3,
+            "unit": "piece",
+            "category": "Produce"
+            },
+            {
+            "name": "Furikake (or shichimi togarashi / toasted sesame)",
+            "quantity": 0,
+            "unit": "",
+            "category": "Seasonings"
             }
-        ]
-    }
+        ],
+        "instructions": [
+            "Toss sliced cucumbers with ¼ cup rice vinegar and a pinch of kosher salt in a bowl; set aside to pickle slightly.",
+            "Rinse 2 cups sushi rice, then combine with 2½ cups water, a pinch of salt, and bring to a boil. Lower heat, cover tightly, and cook 20–25 minutes until tender. Fluff with a fork.",
+            "In a small bowl, whisk chili crisp with a drizzle of rice vinegar and about ⅓ cup of the mayonnaise to form a spicy mayo; set aside.",
+            "Preheat broiler on high. Pat salmon pieces dry, season with salt, and toss in a bowl with the remaining mayonnaise and a pinch of cayenne. Arrange on a foil-lined baking sheet and broil 8–10 minutes until lightly browned and cooked through.",
+            "Divide cooked rice among 4 bowls. Add salmon, drained cucumbers, and sliced avocado. Spoon some reserved cucumber pickling liquid over, drizzle with spicy mayo, and top with scallions. Sprinkle furikake, shichimi togarashi, or sesame seeds to finish."
+        ],
+        "nutrition": {
+            "predicted": true,
+            "total_servings": 4,
+            "calories_per_serving": "920 kcal",
+            "protein_per_serving": "20 g",
+            "carbs_per_serving": "90 g",
+            "fat_per_serving": "42 g"
+        }
+    },
+    "Yogurt Bowl with Harissa Chickpeas & Persimmon Salad": {
+        "ingredients": [
+        {
+            "name": "Olive oil",
+            "quantity": 0.5,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Garlic clove (bashed)",
+            "quantity": 1,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Ground cumin",
+            "quantity": 0.5,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Rose harissa (or harissa)",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Chickpeas",
+            "quantity": 100,
+            "unit": "g",
+            "category": "Dry Goods"
+        },
+        {
+            "name": "Sesame seeds",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Nuts/Seeds"
+        },
+        {
+            "name": "Dill",
+            "quantity": 1,
+            "unit": "handful",
+            "category": "Produce"
+        },
+        {
+            "name": "Mint",
+            "quantity": 1,
+            "unit": "handful",
+            "category": "Produce"
+        },
+        {
+            "name": "Celery stick",
+            "quantity": 1,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Lebanese cucumber (or 1/3 regular)",
+            "quantity": 1,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Lettuce leaves (cos or romaine)",
+            "quantity": 3,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Persimmon (or dried apricots)",
+            "quantity": 0.5,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Lemon",
+            "quantity": 0.5,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Yogurt",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Dairy"
+        }
+        ],
+        "instructions": [
+        "In a large pan over medium heat, add olive oil, bashed garlic, cumin, and harissa. Stir in the chickpeas and let them sizzle for a few minutes. Add sesame seeds and reduce heat to low.",
+        "Finely chop dill and mint. Place half the herbs in your serving bowl, reserving the rest on the cutting board.",
+        "Slice celery finely, then chop cucumber, lettuce, and persimmon into bite-size pieces. Squeeze half a lemon over these vegetables and toss with the remaining herbs.",
+        "Add yogurt to the bowl with the first half of the herbs, stirring gently, then spread it around the edges to create a base.",
+        "Top the yogurt with the cucumber salad.",
+        "Finally, spoon the warm harissa chickpeas over the salad. Drizzle any leftover harissa oil from the pan on top before serving."
+        ],
+        "nutrition": {
+        "predicted": true,
+        "total_servings": 1,
+        "calories_per_serving": "420 kcal",
+        "protein_per_serving": "17 g",
+        "carbs_per_serving": "43 g",
+        "fat_per_serving": "18 g"
+        }
+    },
+    "Italian-Style Skillet Chicken with Tomatoes and Mushrooms": {
+        "ingredients": [
+        {
+            "name": "Chicken cutlets (boneless, skinless)",
+            "quantity": 4,
+            "unit": "piece",
+            "category": "Meat"
+        },
+        {
+            "name": "Dried oregano",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Salt",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Black pepper",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "All-purpose flour",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Baking"
+        },
+        {
+            "name": "Extra virgin olive oil",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Baby Bella or white mushrooms",
+            "quantity": 8,
+            "unit": "oz",
+            "category": "Produce"
+        },
+        {
+            "name": "Grape tomatoes (halved)",
+            "quantity": 14,
+            "unit": "oz",
+            "category": "Produce"
+        },
+        {
+            "name": "Fresh garlic (chopped)",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Produce"
+        },
+        {
+            "name": "White wine",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Other"
+        },
+        {
+            "name": "Lemon juice (freshly squeezed)",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Produce"
+        },
+        {
+            "name": "Chicken broth",
+            "quantity": 0.75,
+            "unit": "cup",
+            "category": "Other"
+        },
+        {
+            "name": "Baby spinach (optional)",
+            "quantity": 1,
+            "unit": "handful",
+            "category": "Produce"
+        }
+        ],
+        "instructions": [
+        "Pat chicken cutlets dry and season both sides with 1/2 tbsp dried oregano, 1/2 tsp salt, and 1/2 tsp black pepper. Coat the chicken with flour, dusting off excess.",
+        "Heat 2 tbsp olive oil in a large cast iron skillet over medium-high heat. Brown chicken cutlets on both sides for about 3 minutes each. Transfer to a plate.",
+        "In the same skillet, add more olive oil if needed. Saute mushrooms for about 1 minute, then add tomatoes, garlic, the remaining oregano, salt, pepper, and 2 tsp flour. Cook for 3 minutes, stirring regularly.",
+        "Add white wine and cook briefly to reduce slightly. Stir in lemon juice and chicken broth.",
+        "Bring the liquid to a boil, then return chicken to the skillet. Cook over high heat for 3 minutes, then reduce to medium-low, cover, and cook for another 7–8 minutes until chicken reaches an internal temperature of 165°F.",
+        "Optional: Stir in baby spinach just before serving. Serve hot with orzo pasta or crusty Italian bread."
+        ],
+        "nutrition": {
+        "predicted": false,
+        "calories": "306.7 kcal",
+        "carbohydrates": "19.5 g",
+        "protein": "39.2 g",
+        "fat": "4.9 g",
+        "saturated_fat": "1.1 g",
+        "trans_fat": "0.1 g",
+        "cholesterol": "108.8 mg",
+        "sodium": "947.7 mg",
+        "potassium": "979.8 mg",
+        "fiber": "2.4 g",
+        "vitamin_a": "903 IU",
+        "vitamin_c": "21.4 mg",
+        "calcium": "56.1 mg",
+        "iron": "2.4 mg"
+        }
+    },      
+    "Pasta Fagioli": {
+        "ingredients": [
+        {
+            "name": "Small pasta",
+            "quantity": 0.5,
+            "unit": "pound",
+            "category": "Dry Goods"
+        },
+        {
+            "name": "Extra virgin olive oil",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Yellow onion (finely chopped)",
+            "quantity": 1,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Celery stalks (finely chopped)",
+            "quantity": 2,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Carrots (finely chopped)",
+            "quantity": 2,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Garlic cloves (minced)",
+            "quantity": 2,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Dried bay leaf",
+            "quantity": 1,
+            "unit": "piece",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Dried oregano",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Fire roasted diced tomatoes",
+            "quantity": 28,
+            "unit": "ounce",
+            "category": "Canned Goods"
+        },
+        {
+            "name": "Vegetable broth",
+            "quantity": 6,
+            "unit": "cup",
+            "category": "Other"
+        },
+        {
+            "name": "Cannellini beans (drained and rinsed)",
+            "quantity": 15,
+            "unit": "ounce",
+            "category": "Canned Goods"
+        },
+        {
+            "name": "Kidney beans (drained and rinsed)",
+            "quantity": 15,
+            "unit": "ounce",
+            "category": "Canned Goods"
+        },
+        {
+            "name": "Kosher salt",
+            "quantity": 1,
+            "unit": "pinch",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Black pepper (freshly ground)",
+            "quantity": 1,
+            "unit": "pinch",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Fresh basil leaves (cut into ribbons)",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Produce"
+        },
+        {
+            "name": "Crushed red pepper (optional)",
+            "quantity": 0,
+            "unit": "",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Grated Parmesan cheese",
+            "quantity": 0,
+            "unit": "",
+            "category": "Dairy"
+        },
+        {
+            "name": "Italian bread",
+            "quantity": 1,
+            "unit": "loaf",
+            "category": "Bakery"
+        }
+        ],
+        "instructions": [
+        "Cook the pasta in a large pot of boiling water according to package instructions. Drain well and set aside.",
+        "In a large Dutch oven or cast iron pot, heat 2 tablespoons of olive oil over medium-high heat. Sauté the onion, celery, and carrots until softened (about 4 minutes). Add garlic, bay leaf, and dried oregano, and cook for another 2 minutes, stirring occasionally.",
+        "Add the fire roasted diced tomatoes, vegetable broth, cannellini beans, and kidney beans to the pot. Season with salt and pepper to taste. Bring to a boil, then reduce the heat to simmer. Cover partially with a lid and simmer for 10 to 15 minutes.",
+        "Add the cooked pasta to the pot, stirring until dispersed and warmed through. Remove the pot from heat and stir in the fresh basil.",
+        "Ladle the soup into serving bowls. Top with crushed red pepper (optional) and grated Parmesan cheese. Serve with crusty Italian bread."
+        ],
+        "nutrition": {
+        "predicted": false,
+        "calories": "171.2 kcal",
+        "carbohydrates": "35.6 g",
+        "protein": "5.5 g",
+        "fat": "0.7 g",
+        "saturated_fat": "0.1 g",
+        "polyunsaturated_fat": "0.3 g",
+        "monounsaturated_fat": "0.1 g",
+        "sodium": "958.7 mg",
+        "potassium": "195.2 mg",
+        "fiber": "2.3 g",
+        "sugar": "4.8 g",
+        "vitamin_a": "4016.7 IU",
+        "vitamin_c": "3.3 mg",
+        "calcium": "30.4 mg",
+        "iron": "0.8 mg"
+        }
+    },
+    "Extra-Crispy Air Fryer Chicken Wings": {
+        "ingredients": [
+        {
+            "name": "Chicken wings (flats and drumettes separated)",
+            "quantity": 2,
+            "unit": "lb",
+            "category": "Meat"
+        },
+        {
+            "name": "Baking powder",
+            "quantity": 1.5,
+            "unit": "teaspoon",
+            "category": "Baking"
+        },
+        {
+            "name": "Cornstarch",
+            "quantity": 1.5,
+            "unit": "teaspoon",
+            "category": "Baking"
+        },
+        {
+            "name": "Nonstick vegetable oil spray",
+            "quantity": 0,
+            "unit": "",
+            "category": "Other"
+        },
+        {
+            "name": "Kosher salt",
+            "quantity": 1.5,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Freshly ground pepper",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Garlic salt",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Onion powder",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Smoked paprika",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Extra-virgin olive oil",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Mild hot sauce (e.g., Frank’s RedHot)",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Condiment"
+        },
+        {
+            "name": "Ranch dressing or blue cheese dressing (store-bought or homemade)",
+            "quantity": 0,
+            "unit": "",
+            "category": "Condiment"
+        }
+        ],
+        "instructions": [
+        "Pat dry the chicken wings with paper towels and place them in a medium bowl. Add baking powder and cornstarch, then toss to coat evenly. Transfer the wings to a baking sheet or large plate and chill for 1 hour.",
+        "Spray the air fryer basket with nonstick vegetable oil spray and preheat the air fryer to 400°F. In a small bowl, mix kosher salt, freshly ground pepper, garlic salt, onion powder, and smoked paprika.",
+        "Transfer the chicken wings to a clean large bowl. Sprinkle the spice mixture over the wings, then add extra-virgin olive oil and mild hot sauce. Toss the wings until fully coated.",
+        "Working in two batches, arrange the wings in a single layer in the air fryer basket, spacing them about ½ inch apart. Cook for 25–30 minutes, turning halfway through, until the wings are golden brown, crispy, and cooked through.",
+        "Transfer the cooked wings to a platter and let rest for 5 minutes. Serve with ranch or blue cheese dressing for dipping."
+        ],
+        "nutrition": {
+        "predicted": true,
+        "total_servings": 5,
+        "calories_per_serving": "310 kcal",
+        "protein_per_serving": "26 g",
+        "carbs_per_serving": "2 g",
+        "fat_per_serving": "22 g"
+        }
+    },
+    "Three-Bean Chili": {
+        "ingredients": [
+        {
+            "name": "Olive oil",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Onion (chopped small)",
+            "quantity": 1,
+            "unit": "medium",
+            "category": "Produce"
+        },
+        {
+            "name": "Peppers (of your choice, finely chopped)",
+            "quantity": 2,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Garlic cloves (minced)",
+            "quantity": 3,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Chili powder",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Ground cumin",
+            "quantity": 2,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Dried oregano",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Table salt (or kosher salt)",
+            "quantity": 1.5,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Beer",
+            "quantity": 12,
+            "unit": "ounce",
+            "category": "Other"
+        },
+        {
+            "name": "Crushed tomatoes (fire-roasted if available)",
+            "quantity": 28,
+            "unit": "ounce",
+            "category": "Canned Goods"
+        },
+        {
+            "name": "Mixed dried beans",
+            "quantity": 1.5,
+            "unit": "cup",
+            "category": "Dry Goods"
+        },
+        {
+            "name": "Water",
+            "quantity": 4,
+            "unit": "cup",
+            "category": "Other"
+        },
+        {
+            "name": "Lime wedges (for serving)",
+            "quantity": 0,
+            "unit": "",
+            "category": "Produce"
+        },
+        {
+            "name": "Sour cream (for serving)",
+            "quantity": 0,
+            "unit": "",
+            "category": "Dairy"
+        },
+        {
+            "name": "Diced white onion (for serving)",
+            "quantity": 0,
+            "unit": "",
+            "category": "Produce"
+        },
+        {
+            "name": "Cilantro (for serving)",
+            "quantity": 0,
+            "unit": "",
+            "category": "Produce"
+        },
+        {
+            "name": "Corn or flour tortillas, tortilla chips, or rice (for serving)",
+            "quantity": 0,
+            "unit": "",
+            "category": "Other"
+        }
+        ],
+        "instructions": [
+        "Heat olive oil in a medium heavy pot or Dutch oven over medium heat. Add chopped onion and cook for 5 minutes until translucent.",
+        "Add peppers and cook for 3 more minutes. Stir in garlic, chili powder, cumin, oregano, and salt, cooking for 2 minutes until browned and fragrant.",
+        "Add the beer, scraping up any browned bits from the bottom of the pot. Boil until reduced by half, or until the alcohol is mostly cooked off.",
+        "If cooking on the stove: Add tomatoes, dried beans, and water. Bring to a boil, then reduce to a gentle simmer. Cover partially with a lid and cook for 2.5–3 hours, stirring occasionally, until beans are tender. Add more water as needed if the chili becomes too thick.",
+        "If using a slow-cooker: Transfer onion, spice, and beer mixture to a slow-cooker. Add tomatoes, dried beans, and water. Cook on HIGH for 6–7 hours, until beans are tender.",
+        "If using a pressure cooker: Follow the manufacturer’s directions. Estimate 20–25 minutes on high pressure for smaller beans, and 35–40 minutes for larger beans.",
+        "Serve hot with lime wedges, sour cream, diced onion, cilantro, and your choice of tortillas, tortilla chips, or rice."
+        ],
+        "nutrition": {
+        "predicted": true,
+        "total_servings": 6,
+        "calories_per_serving": "225 kcal",
+        "protein_per_serving": "10 g",
+        "carbs_per_serving": "35 g",
+        "fat_per_serving": "4 g"
+        }
+    },
+    "Oatmeal Breakfast Cookies": {
+        "ingredients": [
+          {
+            "name": "Ground flaxseed",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Dry Goods"
+          },
+          {
+            "name": "Warm water",
+            "quantity": 5,
+            "unit": "tablespoon",
+            "category": "Other"
+          },
+          {
+            "name": "Oat flour",
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Baking"
+          },
+          {
+            "name": "Whole rolled oats",
+            "quantity": 1.25,
+            "unit": "cup",
+            "category": "Dry Goods"
+          },
+          {
+            "name": "Almond flour",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Baking"
+          },
+          {
+            "name": "Lemon zest",
+            "quantity": 0.5,
+            "unit": "tablespoon",
+            "category": "Produce"
+          },
+          {
+            "name": "Baking powder",
+            "quantity": 0.5,
+            "unit": "teaspoon",
+            "category": "Baking"
+          },
+          {
+            "name": "Baking soda",
+            "quantity": 0.5,
+            "unit": "teaspoon",
+            "category": "Baking"
+          },
+          {
+            "name": "Cinnamon",
+            "quantity": 0.5,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+          },
+          {
+            "name": "Sea salt",
+            "quantity": 0.5,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+          },
+          {
+            "name": "Creamy natural almond butter",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Other"
+          },
+          {
+            "name": "Coconut oil (melted)",
+            "quantity": 0.25,
+            "unit": "cup",
+            "category": "Other"
+          },
+          {
+            "name": "Maple syrup",
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Other"
+          },
+          {
+            "name": "Walnuts",
+            "quantity": 0.33,
+            "unit": "cup",
+            "category": "Nuts/Seeds"
+          },
+          {
+            "name": "Fresh blueberries",
+            "quantity": 0.75,
+            "unit": "cup",
+            "category": "Produce"
+          }
+        ],
+        "instructions": [
+          "Preheat the oven to 350°F and line a large baking sheet with parchment paper.",
+          "In a small bowl, combine the ground flaxseed and warm water. Set aside to thicken for 5 minutes.",
+          "In a large bowl, stir together the oat flour, additional rolled oats, almond flour, lemon zest, baking powder, baking soda, cinnamon, and sea salt.",
+          "In a medium bowl, combine almond butter, melted coconut oil, and maple syrup. Stir well to incorporate, then stir in the flaxseed mixture.",
+          "Add the wet ingredients to the dry ingredients and fold together until just combined. Fold in the walnuts and blueberries.",
+          "Scoop ¼ cup of batter for each cookie onto the prepared baking sheet. Bake for 20 to 24 minutes, or until browned around the edges.",
+          "Let cookies cool on the baking sheet for 5 to 10 minutes before transferring to a wire rack to cool completely. If moved too soon, the cookies may fall apart.",
+          "Once completely cooled, store cookies in an airtight container or freeze for later."
+        ],
+        "nutrition": {
+          "predicted": true,
+          "total_servings": 12,
+          "calories_per_serving": "160 kcal",
+          "protein_per_serving": "4 g",
+          "carbs_per_serving": "14 g",
+          "fat_per_serving": "10 g"
+        }
+      }
+    
 }
+  
