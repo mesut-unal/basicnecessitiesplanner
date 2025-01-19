@@ -71,7 +71,7 @@ if "misc_items" not in st.session_state:
 meal_types = ["Breakfast", "Lunch", "Dinner"]
 days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-st.title("Mesamie's Weekly Ratios")
+st.title("Mesamie's Weekly Rations")
 
 # ------------------------------------------------
 # 6. Create two tabs
