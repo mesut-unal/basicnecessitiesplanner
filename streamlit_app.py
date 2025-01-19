@@ -2,6 +2,7 @@ import streamlit as st
 import json
 import os
 from collections import defaultdict
+import time
 
 # ------------------------------------------------
 # 1. Utility functions to load/save dishes in JSON
@@ -57,13 +58,16 @@ if "dishes_db" not in st.session_state:
 dishes_db = st.session_state["dishes_db"]
 
 if "meal_plan" not in st.session_state:
-    # meal_plan = { day: { meal_type: [list_of_dishes] } }
     st.session_state["meal_plan"] = defaultdict(lambda: defaultdict(list))
 meal_plan = st.session_state["meal_plan"]
 
 # Keep a separate list in session_state for stand-alone misc items
 if "misc_items" not in st.session_state:
     st.session_state["misc_items"] = []
+
+# Keep track of last button click time to throttle repeated clicks
+if "last_click_time" not in st.session_state:
+    st.session_state["last_click_time"] = 0
 
 # ------------------------------------------------
 # 5. Basic config
@@ -98,21 +102,36 @@ with tab_meal_plan:
     dish_options = ["CLEAN THE CELL"] + sorted(list(dishes_db.keys()))
     selected_dish = st.sidebar.selectbox("Select Dish", dish_options)
 
+    # Throttled "Confirm Selection" button
     if st.sidebar.button("Confirm Selection"):
-        if selected_dish == "CLEAN THE CELL":
-            meal_plan[selected_day][selected_meal] = []  # remove all dishes in that cell
-            st.sidebar.success(f"Cleared {selected_day} ({selected_meal}).")
-        else:
-            meal_plan[selected_day][selected_meal].append(selected_dish)
-            st.sidebar.success(f"Added '{selected_dish}' to {selected_day} ({selected_meal}).")
+        current_time = time.time()
+        if current_time - st.session_state["last_click_time"] > 1:  # 1-second delay
+            if selected_dish == "CLEAN THE CELL":
+                # Remove all dishes in that cell
+                meal_plan[selected_day][selected_meal] = []
+                st.sidebar.success(f"Cleared {selected_day} ({selected_meal}).")
+            else:
+                meal_plan[selected_day][selected_meal].append(selected_dish)
+                st.sidebar.success(f"Added '{selected_dish}' to {selected_day} ({selected_meal}).")
 
-        st.experimental_rerun()
+            # Update the last click time and rerun
+            st.session_state["last_click_time"] = current_time
+            st.experimental_rerun()
+        else:
+            st.sidebar.warning("Please wait before clicking again.")
 
     # B) "Clear All" button (for the entire meal plan)
     st.sidebar.header("Clear Everything")
     if st.sidebar.button("Clear All"):
-        st.session_state["meal_plan"] = defaultdict(lambda: defaultdict(list))
-        st.experimental_rerun()
+        current_time = time.time()
+        if current_time - st.session_state["last_click_time"] > 1:  # 1-second delay
+            st.session_state["meal_plan"] = defaultdict(lambda: defaultdict(list))
+            st.sidebar.success("Cleared the entire meal plan.")
+
+            st.session_state["last_click_time"] = current_time
+            st.experimental_rerun()
+        else:
+            st.sidebar.warning("Please wait before clicking again.")
 
     # ----------------------------------
     # 7.2: Misc Items Section on Sidebar
@@ -120,7 +139,7 @@ with tab_meal_plan:
     st.sidebar.header("Additional Items (Not Tied to Calendar)")
 
     misc_item_name = st.sidebar.text_input("Misc Item Name (e.g. 'Loaf of bread')")
-    
+
     # Example unit dropdown
     misc_unit_choices = ["", "g", "lb", "oz", "piece", "head", "ml", "cup"]
     misc_selected_unit = st.sidebar.selectbox("Unit (Optional)", misc_unit_choices)
@@ -131,31 +150,35 @@ with tab_meal_plan:
         step_value = 100.0
     elif misc_selected_unit == "lb":
         step_value = 0.5
-    elif misc_selected_unit == "oz":
-        step_value = 1.0
     elif misc_selected_unit == "ml":
         step_value = 50.0
     # etc. if needed
 
     misc_quantity = st.sidebar.number_input("Quantity (Optional)", step=step_value, value=0.0)
 
+    # Throttled "Add Misc Item" button
     if st.sidebar.button("Add Misc Item"):
-        if not misc_item_name.strip():
-            st.sidebar.warning("Please provide at least a name for the item.")
+        current_time = time.time()
+        if current_time - st.session_state["last_click_time"] > 1:  # 1-second delay
+            if not misc_item_name.strip():
+                st.sidebar.warning("Please provide at least a name for the item.")
+            else:
+                st.session_state["misc_items"].append({
+                    "name": misc_item_name,
+                    "unit": misc_selected_unit,
+                    "quantity": misc_quantity
+                })
+                st.sidebar.success(f"Added '{misc_item_name}' to Misc Items.")
+                st.session_state["last_click_time"] = current_time
+                st.experimental_rerun()
         else:
-            st.session_state["misc_items"].append({
-                "name": misc_item_name,
-                "unit": misc_selected_unit,
-                "quantity": misc_quantity
-            })
-            st.sidebar.success(f"Added '{misc_item_name}' to Misc Items.")
-            st.experimental_rerun()
+            st.sidebar.warning("Please wait before clicking again.")
 
     st.sidebar.write("### Current Misc Items")
     if not st.session_state["misc_items"]:
         st.sidebar.write("No extra items yet.")
     else:
-        # For each item, let the user remove it
+        # For each item, let the user remove it (also throttled)
         for i, item in enumerate(st.session_state["misc_items"]):
             col1, col2, col3, col4 = st.sidebar.columns([2, 1, 1, 1])
             with col1:
@@ -165,9 +188,15 @@ with tab_meal_plan:
             with col3:
                 st.write(item["quantity"] if item["quantity"] else "-")
             with col4:
+                # Throttle individual remove button
                 if st.button("Remove", key=f"remove_misc_{i}"):
-                    st.session_state["misc_items"].pop(i)
-                    st.experimental_rerun()
+                    current_time = time.time()
+                    if current_time - st.session_state["last_click_time"] > 1:  # 1-second delay
+                        st.session_state["misc_items"].pop(i)
+                        st.session_state["last_click_time"] = current_time
+                        st.experimental_rerun()
+                    else:
+                        st.warning("Please wait before clicking again.")
 
     # ----------------------------------
     # 7.3: Calendar Table (HTML-based)
@@ -218,7 +247,7 @@ with tab_meal_plan:
                     name = ingr["name"]
                     shopping_list[cat][name] += ingr["quantity"]
 
-    # Add Misc Items under category "Misc" (or any name you prefer)
+    # Add Misc Items under category "Misc" 
     for item in st.session_state["misc_items"]:
         cat = "Misc"
         name = item["name"]
@@ -232,29 +261,11 @@ with tab_meal_plan:
         for category, items in shopping_list.items():
             st.write(f"### {category}")
             for item_name, total_qty in items.items():
-                # Attempt to find the unit from the first dish that has this item
-                # (Only relevant for "normal" dishes, not necessarily for misc.)
-                unit = ""
-                # If it's from Misc, we also can show the unit user typed
-                if category == "Misc":
-                    # We can attempt to retrieve from the item itself,
-                    # but we already merged them by name. So let's just show blank or custom logic.
-                    pass
-                else:
-                    # normal dish logic
-                    for dish_name, data in dishes_db.items():
-                        for ing in data["ingredients"]:
-                            if ing["name"] == item_name:
-                                unit = ing.get("unit", "")
-                                break
-                        if unit:
-                            break
-                st.write(f"- {item_name}: {total_qty} {unit if unit else ''}")
-
+                # We skip unit logic here for clarity, or you can add as needed
+                st.write(f"- {item_name}: {total_qty}")
 
 # ------------------------------------------------
 # 8. TAB 2: Add a New Dish
-#     (Structure remains the same, only relevant snippet shown previously)
 # ------------------------------------------------
 with tab_add_dish:
     st.subheader("Create a New Dish (Saved to JSON)")
@@ -270,9 +281,6 @@ with tab_add_dish:
         st.session_state["new_dish_ingredients"].append(
             {"name": "", "quantity": 0.0, "unit": "", "category": ""}
         )
-
-    #  (Below snippet is the structure the user requested to keep,
-    #   with dynamic step for quantity and dropdown for category)
 
     category_options = ["Produce", "Meat", "Dairy", "Dry Goods", "Canned Goods", "Bakery", "Other"]
     unit_choices = ["g", "lb", "oz", "piece", "head", "ml", "cup", ""]
@@ -343,7 +351,6 @@ with tab_add_dish:
             new_dish_data = {
                 "ingredients": st.session_state["new_dish_ingredients"]
             }
-
             # Update the in-memory DB
             dishes_db[new_dish_name] = new_dish_data
 
