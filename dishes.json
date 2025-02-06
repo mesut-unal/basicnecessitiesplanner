@@ -1186,7 +1186,177 @@
           "carbs_per_serving": "14 g",
           "fat_per_serving": "10 g"
         }
-      }
-    
+    },
+    "Baked Feta Eggs": {
+        "ingredients": [
+        {
+            "name": "Cherry or grape tomatoes",
+            "quantity": 2,
+            "unit": "cup",
+            "category": "Produce"
+        },
+        {
+            "name": "Red bell pepper (diced)",
+            "quantity": 1,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Red onion (diced)",
+            "quantity": 0.5,
+            "unit": "piece",
+            "category": "Produce"
+        },
+        {
+            "name": "Garlic (minced)",
+            "quantity": 3,
+            "unit": "clove",
+            "category": "Produce"
+        },
+        {
+            "name": "Feta cheese",
+            "quantity": 8,
+            "unit": "oz",
+            "category": "Dairy"
+        },
+        {
+            "name": "Olive oil",
+            "quantity": 4,
+            "unit": "tablespoon",
+            "category": "Other"
+        },
+        {
+            "name": "Dried oregano",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Sea salt",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Dried thyme",
+            "quantity": 0.5,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Ground black pepper",
+            "quantity": 0.5,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Red pepper flakes",
+            "quantity": 0.5,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Baby spinach (chopped)",
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Produce"
+        },
+        {
+            "name": "Eggs",
+            "quantity": 4,
+            "unit": "piece",
+            "category": "Other"
+        },
+        {
+            "name": "Fresh basil or chives (optional topping)",
+            "quantity": 0,
+            "unit": "",
+            "category": "Produce"
+        }
+        ],
+        "instructions": [
+        "Preheat the oven to 400°F (200°C).",
+        "If using four individual ramekins, divide tomatoes, bell pepper, red onion, garlic, and feta among them. Drizzle each with 1 tablespoon olive oil. If using one larger baking dish, place all tomatoes, peppers, onions, and garlic in the dish and the feta in the center. Drizzle with the olive oil.",
+        "Mix dried oregano, salt, thyme, black pepper, and red pepper flakes in a small bowl. Sprinkle the mixture over the feta and veggies, dividing equally if using individual dishes.",
+        "Place ramekins on a baking sheet (or place the larger baking dish directly in the oven) and bake for 25 minutes.",
+        "Remove from the oven and stir to mix the softened feta with the veggies. Add the chopped spinach and stir it in until combined.",
+        "Create a small well in the middle of each ramekin (or four wells if using one dish). Crack one egg into each well.",
+        "Return the dish(es) to the oven and bake for an additional 10 minutes or until the eggs are cooked to your preference.",
+        "Top with chopped fresh basil or chives if desired. Serve with crusty bread, toast, or pita for dipping."
+        ],
+        "nutrition": {
+        "predicted": false,
+        "total_servings": 4,
+        "calories_per_serving": "373 kcal",
+        "fat_per_serving": "31 g",
+        "saturated_fat_per_serving": "12 g",
+        "trans_fat_per_serving": "0 g",
+        "unsaturated_fat_per_serving": "17 g",
+        "cholesterol_per_serving": "236 mg",
+        "sodium_per_serving": "1131 mg",
+        "carbohydrates_per_serving": "10 g",
+        "fiber_per_serving": "2 g",
+        "sugar_per_serving": "6 g",
+        "protein_per_serving": "16 g"
+        }
+    },    
+    "Homemade Bruschetta Sauce (Trader Joe’s Copycat Recipe)": {
+        "yield": "3 cups",
+        "prep_time": "20 minutes",
+        "category": "Sauce",
+        "method": "Stir",
+        "cuisine": "American, Italian",
+        "diet": "Vegan",
+        "ingredients": [
+        {
+            "name": "Tomatoes (Roma, hot house cluster, or beefsteak)",
+            "quantity": 1.5,
+            "unit": "lbs",
+            "category": "Produce"
+        },
+        {
+            "name": "Flaky sea salt (e.g., Maldon) or kosher salt",
+            "quantity": 1,
+            "unit": "teaspoon",
+            "category": "Seasonings"
+        },
+        {
+            "name": "Garlic (finely minced)",
+            "quantity": 1,
+            "unit": "tablespoon",
+            "category": "Produce"
+        },
+        {
+            "name": "Olive oil",
+            "quantity": 0.25,
+            "unit": "cup",
+            "category": "Other"
+        },
+        {
+            "name": "White balsamic vinegar",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Condiment"
+        },
+        {
+            "name": "Basil (minced)",
+            "quantity": 2,
+            "unit": "tablespoon",
+            "category": "Produce"
+        }
+        ],
+        "instructions": [
+        "Finely chop the tomatoes and place them along with all their juices in a large bowl.",
+        "Season with 1 teaspoon of sea salt (or 3/4 teaspoon kosher salt). Add the garlic, olive oil, white balsamic vinegar, and basil.",
+        "Stir to combine. Taste and adjust seasoning by adding more salt, olive oil, or vinegar as needed.",
+        "Optionally, strain out some of the juices if a thicker sauce is desired, though keeping them enhances the flavor when the sauce is used to dress lentils or grains."
+        ],
+        "nutrition": {
+        "predicted": true,
+        "notes": "Nutrition information not provided; approximate macros can be calculated if needed."
+        },
+        "notes": "A homemade version of Trader Joe's bruschetta sauce without sugar, black pepper, and canola oil."
+    }
+      
 }
   
